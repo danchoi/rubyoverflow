@@ -5,14 +5,15 @@ describe Sites do
     @client = Client.new
   end
 
-  it "retrieves sites" do
-    result = @client.sites.fetch
-    result.should respond_to(:items)
-    result.page.should == 1
-  end
+  describe ".fetch" do
+    it "retrieves sites" do
+      result = Rubyoverflow::Sites.fetch
+      result.should respond_to(:items)
+    end
 
-  it "retrieves second page of sites" do
-    result = @client.sites.fetch :page => 2
-    result.page.should == 2
+    it "retrieves second page of sites" do
+      result = Rubyoverflow::Sites.fetch :page => 2
+      result.should respond_to(:items)
+    end
   end
 end
