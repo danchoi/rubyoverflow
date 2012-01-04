@@ -34,6 +34,7 @@ rubyoverflow is a library for querying the Stack Overflow API
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
+* Make sure tests pass for MRI 1.8.7, 1.9.2, and 1.9.3. Set up travis-ci.org on your fork, and the .travis.yml file will do the rest
 
 == Copyright
 
